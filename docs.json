@@ -14,7 +14,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Homepage",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting Started",
@@ -105,13 +105,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://mrscraper.com/blog",
           "icon": "newspaper"
         }
       ]

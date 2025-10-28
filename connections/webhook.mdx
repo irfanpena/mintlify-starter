@@ -1,5 +1,27 @@
 ---
-title: 'How to Setup Webhooks'
-description: 'Step-by-step guide to integrate our Scrapers to another external API using webhooks'
+title: "Webhook Connections"
+description: "This guide walks you through how to connect your MrScraper scrapers to external APIs using webhooks."
 ---
 
+## What Are Webhooks?
+
+Webhooks let you automatically send HTTP requests to another API when specific events happen in your scraper — such as when a scrape starts, completes, or fails.
+
+## Setting Up a Webhook
+
+Follow these steps to create and connect a webhook in MrScraper:
+
+1. Open your **MrScraper dashboard**.
+2. Click the **gear icon** on the left panel and select **Webhooks**.
+3. On the **Webhooks page**, click the + icon in the top-right corner.
+4. Fill in the webhook details:
+
+    - **Request Type**: Choose `POST` or `PUT`
+    - **Event**: Select when the webhook should trigger (e.g., *Scraping Started*, *Scraping Completed*, *Scraping Failed*)
+    - **Name**: Give your webhook a descriptive name
+    - **URL**: Enter the endpoint of your external webhook app
+    - **Headers**: (Optional) Add any custom headers
+
+5. Click **Submit** to save your webhook.
+6. Go to your **Scraper Settings** page.
+7. Under **Webhook Settings**, select the webhook you just created and click **Save Webhook Settings**.
