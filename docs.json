@@ -14,14 +14,15 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Homepage",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
-              "documentation/introduction",
-              "documentation/quickstart",
-              "documentation/api-token"
+              "getting-started/overview",
+              "getting-started/token-usage",
+              "getting-started/api-key",
+              "getting-started/quickstart"
             ]
           },
           {
@@ -30,13 +31,28 @@
               "scrapers/overview",
               "scrapers/ai-mode",
               "scrapers/manual-mode",
-              "scrapers/result"
+              "scrapers/result",
+              {
+                "group": "Scrapers Settings",
+                "pages": [
+                  "scrapers/settings/schedule",
+                  "scrapers/settings/proxy"
+                ]
+              },
+              {
+                "group": "Use Cases",
+                "pages": [
+                  "scrapers/use-cases/e-commerce",
+                  "scrapers/use-cases/job-listings",
+                  "scrapers/use-cases/customer-reviews"
+                ]
+              }
             ]
           },
           {
             "group": "Analytics",
             "pages": [
-              "analytics"
+              "manage-analytics"
             ]
           },
           {
@@ -48,11 +64,39 @@
             ]
           },
           {
-            "group": "FAQs & Terms",
+            "group": "Account",
             "pages": [
-              "faq",
-              "terms",
-              "changelog"
+              "account/password",
+              "account/billing"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/glossary",
+              "support/changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "api-reference/overview",
+              "api-reference/authentication",
+              "api-reference/pagination",
+              "api-reference/error-handling"
+            ]
+          },
+          {
+            "group": "API Access",
+            "pages": [
+              "api-reference/api-access/ai",
+              "api-reference/api-access/manual"
             ]
           }
         ]
