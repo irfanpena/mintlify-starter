@@ -1,68 +1,58 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "MrScraper Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1bd0ef",
+    "light": "#1bd0ef",
+    "dark": "#1bd0ef"
   },
-  "favicon": "/favicon.svg",
+  "background": {
+    "image": "/images/blur-top.png"
+  },
+  "favicon": "/logo/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "documentation/introduction",
+              "documentation/quickstart",
+              "documentation/api-token"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Scrapers",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "scrapers/overview",
+              "scrapers/ai-mode",
+              "scrapers/manual-mode",
+              "scrapers/result"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Analytics",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "analytics"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Connections",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "connections/email",
+              "connections/sql",
+              "connections/webhook"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "FAQs & Terms",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "faq",
+              "terms",
+              "changelog"
             ]
           }
         ]
@@ -84,8 +74,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/mrscraper-logo-black.png",
+    "dark": "/logo/mrscraper-logo-white.png"
   },
   "navbar": {
     "links": [
@@ -114,9 +104,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/mrscraper_"
     }
   }
 }

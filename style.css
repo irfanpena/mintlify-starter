@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.dark p {
+  color: white;
+}
+
+.ring-transparent {
+  transition: 0.5s ease-in-out;
+}
+
+.ring-transparent:hover {
+  box-shadow: 1px 1px 21px -1px rgba(49, 57, 219, 0.64);
+  -webkit-box-shadow: 1px 1px 21px -1px rgba(49, 57, 219, 0.64);
+  -moz-box-shadow: 1px 1px 21px -1px rgba(49, 57, 219, 0.64);
+}
+
+:is(.dark .dark\:bg-codeblock\/50) {
+  filter: brightness();
+}
+
+:is(.dark .dark\:bg-codeblock\/50) svg {
+  filter: brightness(10);
+}
+
+:is(.dark .dark\:bg-codeblock\/50):hover {
+  filter: brightness(10);
+}
+
+:is(.dark .dark\:text-primary-light) {
+  color: #1bd0ef;
+}
+
+.text-primary {
+  color: #1bd0ef;
+}
+
+.dark\:bg-primary-light\/10:is(.dark *) {
+  background-color: #13353a;
+}
+
+.border-primary-light\/30 {
+  border-color: #1bd0ef;
+}
+
+.bg-primary-dark {
+  background-color: #1bd0ef;
+}
+
+.bg-primary {
+  background-color: #1bd0ef;
+}
+
+.dark\:bg-primary-light:is(.dark *) {
+  background-color: #1bd0ef;
+}
+
+.prose:is(.dark *) {
+  color: white;
+}
+
+.prose {
+  color: black;
+}
+
+:not(pre) > code:is(.dark *) {
+  background: transparent;
+  border-width: 0;
+}
+
+:not(pre) > code {
+  background: transparent;
+  border-width: 0;
+}
