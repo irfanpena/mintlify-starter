@@ -32,6 +32,7 @@
               "scrapers/ai-mode",
               "scrapers/manual-mode",
               "scrapers/result",
+              "manage-analytics",
               {
                 "group": "Scrapers Settings",
                 "pages": [
@@ -47,12 +48,6 @@
                   "scrapers/use-cases/customer-reviews"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Analytics",
-            "pages": [
-              "manage-analytics"
             ]
           },
           {
