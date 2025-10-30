@@ -20,8 +20,8 @@
             "group": "Getting Started",
             "pages": [
               "getting-started/overview",
-              "getting-started/token-usage",
               "getting-started/api-token",
+              "getting-started/token-usage",
               "getting-started/quickstart"
             ]
           },
