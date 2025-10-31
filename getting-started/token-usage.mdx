@@ -36,12 +36,16 @@ The total token usage would be:
 
 | Component | Calculation     | Tokens |
 | --------- | --------------- | ------ |
-| Runtime   | 90 ÷ 30         | 3      |
+| Runtime   | 40 ÷ 30         | 2      |
 | Input     | 60,000 ÷ 30,000 | 2      |
 | Output    | 15,000 ÷ 7,500  | 2      |
 | Run Trace | Fixed           | 1      |
-| Total |       | 8      |
+| Total |       | 7      |
 
+<Note>
+Runtime tokens are rounded up using the **ceiling rule**.  
+For example, if your scraper runs for 40 seconds, it will count as **2 tokens** (not 1).
+</Note>
 
 ## Manual Scraper Token Usage
 
@@ -64,11 +68,14 @@ Then token usage will be:
 
 | Component | Calculation | Tokens |
 | --------- | ----------- | ------ |
-| Runtime   | 60 ÷ 30     | 2      |
+| Runtime   | 40 ÷ 30     | 2      |
 | Bandwidth | 10 ÷ 2      | 5      |
 | Total |       | 7      |
 
-
+<Note>
+Runtime tokens are rounded up using the **ceiling rule**.  
+For example, if your scraper runs for 40 seconds, it will count as **2 tokens** (not 1).
+</Note>
 
 <Tip>
 Shorter runtimes and optimized prompts help reduce token usage.  
@@ -80,8 +87,8 @@ Several factors affect how many tokens a scraping task consumes:
 
 - **Website Complexity**: Websites with heavy JavaScript, dynamic content, or multiple requests take longer to load and process, increasing runtime and token usage.
 
-- **Page Size and Content Density**: Larger pages with long articles, embedded videos, or extensive metadata produce more input text for AI models to process.
+- **Page Size and Content Density**: Larger pages with long articles, complex html layout, or extensive metadata produce more input text for AI models to process.
 
 - **Data Volume**: Extracting large sets of data (for example, multiple listings or paginated results) requires more compute and bandwidth.
 
-- **AI Processing Load**: For AI Scrapers, complex instructions or unstructured data increase both input and output token usage, since the model must interpret and generate more text.
+- **AI Processing Load**: For AI Scrapers, complex instructions or long-structured expected output data could increase input and output token usage, since the model must interpret and generate more text.
